@@ -26,3 +26,17 @@ document.addEventListener('DOMContentLoaded', () => {
   // Initialize the slider
   showStory(currentIndex);
 });
+
+const hide = document.querySelector('.hide');
+const pop = document.querySelector('.thankyou');
+const openModal = document.querySelector('.submit');
+const closeModal = document.querySelector('.ok');
+
+openModal.addEventListener('click', function() {
+  hide.style.display = 'none';
+  pop.classList.remove('hideit');
+})
+closeModal.addEventListener('click', function() {
+  hide.style.display = '';
+  pop.classList.add('hideit');
+})

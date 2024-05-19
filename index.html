@@ -65,11 +65,7 @@
   </header>
 
   <section id="whatWeStandFor">
-
-    <p>This is the homepage of the web page. Here you can find information about the web page, including road
-      closures, wildlife watch, missing persons, and more.
-    </p>
-    <h2>What we stand for</h2>
+    <img src="/images/indexImages/homepage_hero.svg" alt="what we stand for">"
   </section>
   <main>
     <section id="topStoriesByGenre">
@@ -106,7 +102,7 @@
       <div class="event">
         <img src="../images/indexImages/corgidogshow_Eventshomepage.svg" alt="Event 2 Image">
         <h3><a href="#">Lucky Corgi Wins
-        Dog Show</a></h3>
+            Dog Show</a></h3>
       </div>
       <!-- More events can be added here -->
     </aside>
@@ -135,7 +131,14 @@
     </div>
 
   </section>
-  <section id="protect">
+
+  <section class="thankyou hideit">
+    <img src="/images/wildlifeImages/report_popup.svg" alt="thank-you-image">
+    <h2>Our community will now be safer Thanks to people like you!</h2>
+    <button class="ok">ok</button>
+  </section>
+
+  <section id="protect" class="hide">
     <div>
       <h2>Help Protect Your Community</h2>
       <p>
@@ -175,14 +178,16 @@
         <input type="text" id="location" name="location" placeholder="Enter location">
         <button type="button" id="useCurrentLocation">Use current location</button>
         <br>
-
-        <input type="submit" value="Narc Now!">
       </form>
+      <button class="submit">Submit</button>
+
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2024 Web Page. All rights reserved.</p>
+    <div class="footer-container-img"> <!-----img-->
+      <img src="/images/wildlifeImages/footer.png" alt="missing-person">
+    </div>
   </footer>
   <script src="../js/script.js"></script>
 </body>

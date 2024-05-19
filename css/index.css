@@ -139,14 +139,8 @@ img {
 }
 
 #whatWeStandFor {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  /* Two equal columns */
-  align-items: center;
-  /* Vertically center the items */
-  text-align: center;
-  gap: 10px;
-  /* Optional: Add space between columns */
+  width: 100%;
+  height: auto;
 }
 
 .slider-arrows {
@@ -277,6 +271,40 @@ img {
   font-weight: bold;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.thankyou {
+
+
+  border: 2px solid black;
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding-bottom: 25px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+
+
+}
+
+.thankyou img {
+  width: 20rem;
+}
+
+.ok {
+  width: 82px;
+  height: 45px;
+  background-color: blue;
+  color: white;
+  font-size: larger;
+  border: 2px solid black;
+  border-radius: 12px
+}
+
+.hideit {
+  display: none;
 }
 
 /* Hide the nested nav by default */

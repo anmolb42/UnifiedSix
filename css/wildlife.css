@@ -40,7 +40,7 @@ body {
 
 /* background-color: blue; */
 .safe-container {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   height: 18rem;
   border: 2px solid black;
   border-radius: 12px;
@@ -53,10 +53,13 @@ body {
   margin-top: 2%;
 
   display: flex;
+  flex-direction: column;
   flex: 1 1 auto;
   align-items: center;
   justify-items: center;
 }
+
+
 
 .safe-content {
   display: flex;
@@ -70,21 +73,18 @@ body {
 }
 
 .safe-container .container-img {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+
   width: 50%;
-  height: 100%;
+
 }
 
-.container-img {
-  background-image: url('https://i.pinimg.com/564x/04/a2/a1/04a2a11c8706d59715a807e019f872d5.jpg');
+.safe-container h2 {
+  width: 40%;
+  margin-bottom: 0%;
 }
-
 
 
 .wildlife-news {
-  background-color: wheat;
   display: grid;
   grid-template-columns: 3fr;
   column-gap: 10px;
@@ -96,5 +96,5 @@ body {
 
 .wildlife-news .safe-container {
   width: 90%;
-  align-items: center;
+  align-items: baseline;
 }

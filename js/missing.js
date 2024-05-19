@@ -17,11 +17,11 @@ const showPopup = function() {
   const imgSrc = img.getAttribute('src');
   console.log(imgSrc);
 
-  const details = container.querySelector('.details').textContent;
+
 
   // Set the src attribute of the img element within .popupImg
   popupImg.src = imgSrc;
-  popupDetails.textContent = details;
+
   console.log(popupImg.src);
   console.log('ssss');
 };
