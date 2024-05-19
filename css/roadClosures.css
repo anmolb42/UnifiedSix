@@ -1,0 +1,81 @@
+/* General styles for the nav bar */
+header>nav>ul {
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  /* Flexbox layout for the top-level nav */
+}
+
+header>nav li {
+  flex: 1;
+  /* Each top-level nav item takes equal space */
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+  /* Background color for each nav item */
+}
+
+nav a:hover {
+  background-color: #ccc;
+  /* Background color on hover */
+}
+
+/* Hide the nested nav by default */
+#mainMenu nav ul {
+  visibility: hidden;
+  position: absolute;
+  /* Ensures the submenu doesn't affect the layout of other elements */
+  background-color: white;
+  /* Sets a background color for the submenu */
+  padding: 0;
+  /* Removes default padding */
+  margin: 0;
+  /* Removes default margin */
+  list-style-type: none;
+  /* Removes default list styling */
+  border: 1px solid #ccc;
+  /* Adds a border to the submenu */
+}
+
+/* Ensure the submenu items are displayed as rows */
+#mainMenu nav ul li {
+  display: block;
+  /* Ensures each list item takes up a full row */
+  padding: 10px;
+  /* Adds padding for better spacing */
+}
+
+/* Show the nested nav when hovering over the parent li */
+#mainMenu li:hover nav ul {
+  visibility: visible;
+}
+
+#titleAndSearch {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* Two equal columns */
+  align-items: center;
+  /* Vertically center the items */
+  gap: 10px;
+  /* Optional: Add space between columns */
+}
+
+#search {
+  width: 100%;
+  max-width: 300px;
+}
+
+h1,
+#search,
+main>* {
+  margin-left: 20px;
+  margin-right: 20px;
+}

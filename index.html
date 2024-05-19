@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Homepage</title>
+  <link href="css/index.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+
+    <nav>
+      <ul id="mainMenu">
+        <li>
+          <a href="index.html">Home</a>
+          <nav class="">
+            <ul>
+              <li>Trending</li>
+              <li>Events</li>
+              <li>Lighthearted Reads</li>
+              <li>Narc Now!</li>
+            </ul>
+          </nav>
+        </li>
+        <li><a href="html/roadClosures.html">Road Closures</a>
+          <nav>
+            <ul>
+              <li>Toronto</li>
+              <li>Etobicoke</li>
+              <li>Scarborough</li>
+              <li>York</li>
+            </ul>
+          </nav>
+        </li>
+        <li><a href="html/wildlife.html">Wildlife Watch</a>
+          <nav>
+            <ul>
+              <li>Crazy Coyotes</li>
+              <li>Brimming with Bears</li>
+              <li>The Word about Birds</li>
+            </ul>
+          </nav>
+        </li>
+        <li><a href="html/missing.html">Missing Persons</a>
+          <nav>
+            <ul>
+              <li>Amber Alerts</li>
+              <li>Missing Pets</li>
+            </ul>
+          </nav>
+        </li>
+        <li><a href="html/about.html">About</a></li>
+      </ul>
+    </nav>
+    <div id="titleAndSearch">
+      <div>
+        <img src="../images/indexImages/final_final_final_logo.png" alt="Logo">
+      </div>
+      <div>
+        <input type="text" id="search" placeholder="Search for a location..." onkeyup="filterRoadClosures()" />
+      </div>
+    </div>
+  </header>
+
+  <section id="whatWeStandFor">
+
+    <p>This is the homepage of the web page. Here you can find information about the web page, including road
+      closures, wildlife watch, missing persons, and more.
+    </p>
+    <h2>What we stand for</h2>
+  </section>
+  <main>
+    <section id="topStoriesByGenre">
+      <h2>Trending Stories</h2>
+      <div class="slider">
+        <div class="story active">
+          <img src="../images/indexImages/top_story_localcrime.svg" alt="Story 1 Image">
+          <h3><a href="#">Weird chalk drawing found</a></h3>
+        </div>
+
+        <div class="story">
+          <img src="../images/indexImages/Top_story_missingpersons.svg" alt="Story 2 Image">
+          <h3><a href="#">Missing person, local park</a></h3>
+        </div>
+
+        <div class="story">
+          <img src="../images/indexImages/Top_story_wildlife.svg" alt="Story 3 Image">
+          <h3><a href="#">The more, the bear-ier</a></h3>
+        </div>
+      </div>
+      <div class="slider-arrows">
+        <button class="prev">Prev</button>
+        <button class="next">Next</button>
+      </div>
+    </section>
+
+
+    <aside id="events">
+      <h2>Upcoming Events</h2>
+      <div class="event">
+        <img src="../images/indexImages/blooddonation_eventshomepage.svg" alt="Event 1 Image">
+        <h3><a href="#">The rise of willing participants for blood donation</a></h3>
+      </div>
+      <div class="event">
+        <img src="../images/indexImages/corgidogshow_Eventshomepage.svg" alt="Event 2 Image">
+        <h3><a href="#">Lucky Corgi Wins
+        Dog Show</a></h3>
+      </div>
+      <!-- More events can be added here -->
+    </aside>
+  </main>
+  <section id="lighthearted">
+    <h2>Lighthearted Reads</h2>
+    <div id="lighty">
+      <div>
+        <img src="../images/indexImages/lighthearted_cat.svg" alt="Light Image 1">
+        <a href="#">
+          <span>Meet the New Directors of Mousekeeping</span>
+        </a>
+      </div>
+      <div>
+        <img src="../images/indexImages/lighthearted_teddy.svg" alt="Light Image 2">
+        <a href="#">
+          <span>Bears React to Online Debate</span>
+        </a>
+      </div>
+      <div>
+        <img src="../images/indexImages/lighthearted_godaddy.svg" alt="Light Image 3">
+        <a href="#">
+          <span>Previous Best Domain Name Winners</span>
+        </a>
+      </div>
+    </div>
+
+  </section>
+  <section id="protect">
+    <div>
+      <h2>Help Protect Your Community</h2>
+      <p>
+        lorem ipsum dolervr vnruieri fvifesdvmrhewk froevreovm
+      </p>
+      <p>
+        lorem ipsoum i like to eat eat eat, i love to watch tv, i am gonna reprot crimes not cause i'm a narc but
+        beacuse i'm bored and also i am a narc so if you commit a crime sucks to be you
+      </p>
+    </div>
+    <div>
+      <form action="/submit_report" method="post">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+        <br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+        <br>
+
+        <label for="incidentType">Type of Incident:</label>
+        <select id="incidentType" name="incidentType" required>
+          <option value="" disabled selected>Select Type of Incident</option>
+          <option value="theft">Theft</option>
+          <option value="assault">Assault</option>
+          <option value="vandalism">Vandalism</option>
+          <!-- Add more options as needed -->
+        </select>
+        <br>
+
+        <label for="details">More Details:</label>
+        <textarea id="details" name="details" placeholder="Provide more details..." required></textarea>
+        <br>
+
+        <!-- Location field -->
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" placeholder="Enter location">
+        <button type="button" id="useCurrentLocation">Use current location</button>
+        <br>
+
+        <input type="submit" value="Narc Now!">
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Web Page. All rights reserved.</p>
+  </footer>
+  <script src="../js/script.js"></script>
+</body>
+
+
+
+</html>

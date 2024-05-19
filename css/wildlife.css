@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.nav-widlife {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+}
+
+.nav-links-widlife {
+  display: flex;
+  gap: 20px;
+  /* border: 2px solid black;
+  border-radius: 0px 0px 10px 0px; */
+}
+
+.nav-links-widlife a {
+  text-decoration: none;
+  color: black;
+}
+
+/* .nav-links-widlife li::hover {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  /* Adjust this value to control the distance between text and border */
+/* width: 100%;
+  height: 2px;
+  /* Adjust this value to control the thickness of the border */
+
+/* background-color: blue; */
+.safe-container {
+  font-size: 1.6rem;
+  height: 18rem;
+  border: 2px solid black;
+  border-radius: 12px;
+  ;
+  overflow: hidden;
+  background-color: #fff;
+
+  box-shadow: 5px 5px 10px 0px #1e52641a;
+
+  margin-top: 2%;
+
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-items: center;
+}
+
+.safe-content {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 60px;
+}
+
+.safe-content p {
+  width: 50%;
+}
+
+.safe-container .container-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50%;
+  height: 100%;
+}
+
+.container-img {
+  background-image: url('https://i.pinimg.com/564x/04/a2/a1/04a2a11c8706d59715a807e019f872d5.jpg');
+}
+
+
+
+.wildlife-news {
+  background-color: wheat;
+  display: grid;
+  grid-template-columns: 3fr;
+  column-gap: 10px;
+  place-items: center;
+  margin-top: 2rem;
+  border-radius: 12px;
+
+}
+
+.wildlife-news .safe-container {
+  width: 90%;
+  align-items: center;
+}

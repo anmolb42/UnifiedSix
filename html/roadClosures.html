@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Road Closures</title>
+  <link href="../css/roadClosures.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.css" />
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul id="mainMenu">
+        <li>
+          <a href="../index.html">Home</a>
+          <nav class="">
+            <ul>
+              <li><a href="#">Trending</a> </li>
+              <li>Events</li>
+              <li>Lighthearted Reads</li>
+              <li>Narc Now!</li>
+            </ul>
+          </nav>
+        </li>
+        <li><a href="../html/roadClosures.html">Road Closures</a>
+          <nav>
+            <ul>
+              <li>Toronto</li>
+              <li>Etobicoke</li>
+              <li>Scarborough</li>
+              <li>York</li>
+            </ul>
+          </nav>
+        </li>
+        <li><a href="../html/wildlife.html">Wildlife Watch</a>
+          <nav>
+            <ul>
+              <li>Crazy Coyotes</li>
+              <li>Brimming with Bears</li>
+              <li>The Word about Birds</li>
+            </ul>
+          </nav>
+        </li>
+        <li><a href="../html/missing.html">Missing Persons</a>
+          <nav>
+            <ul>
+              <li>Amber Alerts</li>
+              <li>Missing Pets</li>
+            </ul>
+          </nav>
+        </li>
+        <li><a href="../html/about.html">About</a></li>
+      </ul>
+    </nav>
+
+  </header>
+  <main>
+    <nav style="display: flex">
+      <a href="#">Construction</a>
+      <a href="#">Railroad Crossing</a>
+      <a href="#">Protests</a>
+    </nav>
+    <section id="road-closures">
+      <h2>Road Closures</h2>
+      <p>Use the map and search feature below to find information about current road closures.</p>
+      <div>
+        <input type="text" id="search" placeholder="Search for a location..." onkeyup="filterRoadClosures()" />
+      </div>
+      <!-- The map div -->
+      <div id="map" style="height: 500px; margin-top: 20px;"></div>
+
+      <script>
+        // Initialize the map
+        var map = L.map('map').setView([43.6532, -79.3832], 13); // Coordinates for Toronto
+
+        // Add the OpenStreetMap tiles
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // Add a marker in Toronto
+        var marker = L.marker([43.6532, -79.3832]).addTo(map)
+          .bindPopup('<b>Toronto</b><br />Road Closure Location.').openPopup();
+      </script>
+
+      <ul id="closure-list">
+        <li data-location="Main Street"><b>Main Street</b> - Closed due to construction.</li>
+        <li data-location="Broadway Avenue"><b>Broadway Avenue</b> - Closed due to flooding.</li>
+        <li data-location="Elm Street"><b>Elm Street</b> - Closed for roadwork.</li>
+        <li data-location="Pine Road"><b>Pine Road</b> - Closed due to an accident.</li>
+      </ul>
+    </section>
+  </main>
+  <script src="script.js"></script>
+  <footer>
+    <p>&copy; 2024 Web Page. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/css/wildlife.css" rel="stylesheet" type="text/css" />
+  <link href="/css/index.css" rel="stylesheet" type="text/css" />
+  <title>Wildlife</title>
+</head>
+
+<body>
+  <header>
+
+    <nav>
+      <ul id="mainMenu">
+        <li>
+          <a href="../index.html">Home</a>
+          <nav class="">
+            <ul>
+              <li><a href="#">Trending</a> </li>
+              <li>Events</li>
+              <li>Lighthearted Reads</li>
+              <li>Narc Now!</li>
+            </ul>
+          </nav>
+        </li>
+        <li><a href="../html/roadClosures.html">Road Closures</a>
+          <nav>
+            <ul>
+              <li>Toronto</li>
+              <li>Etobicoke</li>
+              <li>Scarborough</li>
+              <li>York</li>
+            </ul>
+          </nav>
+        </li>
+        <li><a href="../html/wildlife.html">Wildlife Watch</a>
+          <nav>
+            <ul>
+              <li>Crazy Coyotes</li>
+              <li>Brimming with Bears</li>
+              <li>The Word about Birds</li>
+            </ul>
+          </nav>
+        </li>
+        <li><a href="../html/missing.html">Missing Persons</a>
+          <nav>
+            <ul>
+              <li>Amber Alerts</li>
+              <li>Missing Pets</li>
+            </ul>
+          </nav>
+        </li>
+        <li><a href="../html/about.html">About</a></li>
+      </ul>
+    </nav>
+
+  </header>
+  <div class="nav-widlife">
+    <h1>Wildlife Watch</h1>
+    <div class="nav-links-widlife">
+      <a href="#">Wildlife Watch </a>
+      <a href="#">Mssing persons </a>
+      <a href="#">Recent amber alerts</a>
+    </div>
+  </div>
+
+  <div class="safe-container">
+    <h2>Keep Your Neighbourhoods Safe</h2>
+    <div class="safe-content">
+      <p class="safe-p">
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua."
+      </p>
+      <div class="container-img"> <!-----img--></div>
+    </div>
+  </div>
+
+  <div class="wildlife-news">
+    <div class="safe-container">
+      <h2>Asian Hornet Infestation</h2>
+      <div class="safe-content">
+        <p class="safe-p">
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua."
+        </p>
+        <div class="container-img"> <!-----img-->
+           <img src="/images/wildlifeImages/hornet_infestation.png" alt="wildlife"">
+        </div>
+      </div>
+    </div>
+
+    <div class="safe-container">
+      <h2>Coyotes in your hood</h2>
+      <div class="safe-content">
+        <p class="safe-p">
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua."
+        </p>
+        <div class="container-img"> <!-----img-->
+           <img src="/images/wildlifeImages/Coyotes.png" alt="wildlife"">
+        </div>
+      </div>
+    </div>
+
+    <div class="safe-container">
+      <h2>Asian Hornet Infestation</h2>
+      <div class="safe-content">
+        <p class="safe-p">
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua."
+        </p>
+        <div class="container-img"> <!-----img-->
+          <img src="/images/wildlifeImages/hornet_infestation.png" alt="missing-person"">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <section id="protect">
+    <div>
+      <h2>Report a sightings</h2>
+      <p>
+        lorem ipsum dolervr vnruieri fvifesdvmrhewk froevreovm
+      </p>
+      <p>
+        lorem ipsoum i like to eat eat eat, i love to watch tv, i am gonna reprot crimes not cause i'm a narc but
+        beacuse i'm bored and also i am a narc so if you commit a crime sucks to be you
+      </p>
+    </div>
+    <div>
+      <form action="/submit_report" method="post">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+        <br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+        <br>
+
+        <label for="incidentType">Type of Incident:</label>
+        <select id="incidentType" name="incidentType" required>
+          <option value="" disabled selected>Select Type of Incident</option>
+          <option value="theft">Theft</option>
+          <option value="assault">Assault</option>
+          <option value="vandalism">Vandalism</option>
+          <!-- Add more options as needed -->
+        </select>
+        <br>
+
+        <label for="details">More Details:</label>
+        <textarea id="details" name="details" placeholder="Provide more details..." required></textarea>
+        <br>
+
+        <!-- Location field -->
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" placeholder="Enter location">
+        <button type="button" id="useCurrentLocation">Use current location</button>
+        <br>
+
+        <input type="submit" value="Narc Now!">
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Web Page. All rights reserved.</p>
+  </footer>
+  <script src="wildlife.js"></script>
+</body>
+
+</html>
